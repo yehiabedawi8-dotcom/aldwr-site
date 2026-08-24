@@ -208,6 +208,8 @@
   .folio-slot:hover .icon{background:linear-gradient(135deg,var(--grad-a),var(--grad-b)); color:#fff;}
   .folio-slot .cat{font-weight:700; font-size:1rem; color:var(--ink-soft); text-align:center; padding:0 10px;}
   .folio-slot .soon{font-size:.78rem; font-weight:700; color:var(--accent); background:var(--surface); padding:4px 12px; border-radius:var(--radius); border:1px solid var(--line);}
+  .folio-slot.filled{border-style:solid; text-decoration:none; cursor:pointer;}
+  .folio-slot.filled .view{font-size:.78rem; font-weight:700; color:#fff; background:linear-gradient(135deg,var(--grad-a),var(--grad-b)); padding:4px 14px; border-radius:var(--radius);}
   .folio-note{margin-top:24px; color:var(--ink-soft); font-size:1.02rem;}
 
   /* ---------- FAQ ---------- */
@@ -383,11 +385,11 @@
         <span class="cat">سوشيال ميديا</span>
         <span class="soon">قريبًا</span>
       </div>
-      <div class="folio-slot reveal">
+      <a class="folio-slot filled reveal" href="project.html" target="_blank" rel="noopener">
         <span class="icon">◆</span>
         <span class="cat">هوية بصرية</span>
-        <span class="soon">قريبًا</span>
-      </div>
+        <span class="view">عرض المشروع ←</span>
+      </a>
       <div class="folio-slot reveal">
         <span class="icon">▤</span>
         <span class="cat">مطبوعات</span>
