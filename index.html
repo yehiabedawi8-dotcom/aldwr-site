@@ -206,9 +206,9 @@
   @media (max-width:640px){ .folio-grid{grid-template-columns:1fr 1fr;} }
   .folio-slot{aspect-ratio:4/5; border-radius:calc(var(--radius) * 1.5); border:1.5px dashed var(--line); background:var(--bg); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; transition:border-color .25s ease, transform .25s ease;}
   .folio-slot:hover{border-color:var(--accent); border-style:solid; transform:translateY(-4px);}
-  .folio-slot .icon{position:relative; width:44px; height:44px; border-radius:var(--radius); background:var(--surface); display:flex; align-items:center; justify-content:center; color:var(--ink-soft); transition:background .25s ease, color .25s ease;}
+  .folio-slot .icon{position:relative; width:76px; height:76px; border-radius:calc(var(--radius) * 1.2); background:linear-gradient(135deg, rgba(233,84,110,.12), rgba(255,145,77,.12)); display:flex; align-items:center; justify-content:center; color:var(--accent); transition:background .25s ease, color .25s ease;}
   .folio-slot:hover .icon{background:linear-gradient(135deg,var(--grad-a),var(--grad-b)); color:#fff;}
-  .folio-slot .icon svg{width:24px; height:24px; overflow:visible;}
+  .folio-slot .icon svg{width:38px; height:38px; overflow:visible;}
   .folio-slot:hover .icon svg [fill^="url"]{fill:#fff;}
   .icon-anim-pulse{transform-box:fill-box; transform-origin:center; animation:iconPulse 1.8s ease-in-out infinite;}
   .icon-anim-spin{transform-box:fill-box; transform-origin:center; animation:iconSpin 7s linear infinite;}
@@ -392,7 +392,7 @@
     <div class="folio-grid">
       <div class="folio-slot reveal">
         <span class="icon icon-social">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <defs><linearGradient id="gradSocial" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--grad-a)"/><stop offset="1" style="stop-color:var(--grad-b)"/></linearGradient></defs>
             <path d="M4 5.5h16a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1H9l-4 3.5V16H4a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1Z"/>
             <circle class="icon-anim-pulse" cx="18.5" cy="6" r="2.2" fill="url(#gradSocial)" stroke="none"/>
@@ -401,7 +401,7 @@
         <span class="cat">سوشيال ميديا</span>
         <span class="soon">قريبًا</span>
       </div>
-      <a class="folio-slot filled reveal" href="work.html" target="_blank" rel="noopener">
+      <a class="folio-slot filled reveal" href="work.html">
         <span class="icon icon-brand">
           <svg viewBox="0 0 24 24" class="icon-anim-spin">
             <defs><linearGradient id="gradBrand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--grad-a)"/><stop offset="1" style="stop-color:var(--grad-b)"/></linearGradient></defs>
@@ -413,7 +413,7 @@
       </a>
       <div class="folio-slot reveal">
         <span class="icon icon-print">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <defs><linearGradient id="gradPrint" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:var(--grad-a)"/><stop offset="1" style="stop-color:var(--grad-b)"/></linearGradient></defs>
             <rect x="5" y="3" width="14" height="18" rx="1.6"/>
             <path d="M8 8h8M8 12h8M8 16h5"/>
@@ -425,7 +425,7 @@
       </div>
       <div class="folio-slot reveal">
         <span class="icon icon-ux">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <defs><linearGradient id="gradUx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--grad-a)"/><stop offset="1" style="stop-color:var(--grad-b)"/></linearGradient></defs>
             <rect x="3" y="4.5" width="18" height="14" rx="1.6"/>
             <path d="M3 8.5h18"/>
@@ -437,7 +437,7 @@
       </div>
       <div class="folio-slot reveal">
         <span class="icon icon-video">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <defs><linearGradient id="gradVideo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--grad-a)"/><stop offset="1" style="stop-color:var(--grad-b)"/></linearGradient></defs>
             <rect x="3" y="4.5" width="18" height="15" rx="1.6"/>
             <path class="icon-anim-pulse" d="M10 9.3 16 12 10 14.7V9.3Z" fill="url(#gradVideo)" stroke="none"/>
